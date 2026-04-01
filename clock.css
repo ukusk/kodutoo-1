@@ -1,29 +1,93 @@
-body{
-    margin: 1px;
-    padding:0;
-    background-color: black;
-    font-size: 30px;
-    color:white;
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    color: white;
+    overflow: hidden;
 }
 
-#container{
+#container {
+    width: 100%;
+    height: 100%;
+
     display: flex;
     flex-direction: column;
-    height: 90vh;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
-#clockContainer, #dateContainer{
+/* clock */
+#clockContainer {
     display: flex;
     justify-content: center;
-    font-size: 25px;
+    align-items: center;
+
+    font-size: 12vw;
+    font-weight: bold;
+
+    text-shadow: 0 0 20px rgba(0,255,255,0.7),
+                 0 0 40px rgba(0,255,255,0.5);
 }
 
-button{
-    font-size: 1.1em;
-    border-radius: 20px;
-    padding: 0px;
-    height: 40px;
-    width: 40px;
+#dateContainer {
+    margin-top: 2%;
+    font-size: 3vw;
+    opacity: 0.8;
 }
+
+#buttonContainer {
+    position: absolute;
+    bottom: 5%;
+
+    display: flex;
+    gap: 10px;
+}
+
+/* nuppude style */
+button {
+    font-size: 1.5vw;
+    width: 4vw;
+    height: 4vw;
+
+    border-radius: 50%;
+    border: none;
+
+    background: rgba(255,255,255,0.1);
+    color: white;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+/* kasutatud AI-d -> prompt: "anna list eri efektidest mida saaks nuppudele lisada"*/
+
+/* hover effekt nuppudel */
+/* kasutatud AI-d -> prompt: "kuidas lisada nuppudele hover-funktsioon" */
+button:hover {
+    background: rgba(0,255,255,0.6);
+    transform: scale(1.2);
+}
+
+/* pulsing animation */
+/* kasutatud AI-d -> prompt: "kuidas lisada nuppudele pulsing-funktsioon" */
+@keyframes glow {
+    0% { text-shadow: 0 0 10px cyan; }
+    50% { text-shadow: 0 0 30px cyan; }
+    100% { text-shadow: 0 0 10px cyan; }
+}
+
+#clockContainer {
+    animation: glow 2s infinite;
+}
+
+/* kasutatud AI-d -> prompt: vaadata üle kogu css ja soovitada parandusi */

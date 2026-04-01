@@ -1,30 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="et">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="clock.js" defer></script>
+
+
+    <title>Digitaalne Kell - Uku Siim Kurm</title>
+
     <link rel="stylesheet" href="clock.css">
-    <title>Kell</title>
+    <script src="clock.js" defer></script>
 </head>
 
 <body>
-    <!-- HTML struktureerimiseks: Ctrl+A Ctrl+K Ctrl+F -->
+
     <div id="container">
+
+        <!-- clockcontainer -->
         <div id="clockContainer">
-            <div id="hours">00:</div>
-            <div id="minutes">00:</div>
-            <div id="seconds">00</div>
+            <span id="hours">00</span>:
+            <span id="minutes">00</span>:
+            <span id="seconds">00</span>
         </div>
+
+        <!-- datecontainer -->
         <div id="dateContainer">
-            <div id="day">01.</div>
-            <div id="month">01.</div>
-            <div id="year">2000</div>
+            <span id="weekday">Esmaspäev</span>,
+            <span id="day">01</span>.
+            <span id="month">01</span>.
+            <span id="year">2000</span>
         </div>
+
+        <!-- buttoncontainer -->
         <div id="buttonContainer">
+
             <button id="bigger">+</button>
             <button id="smaller">-</button>
+
+            <!-- functionid -->
+            <button id="colorChange">🎨</button>
+            <button id="toggleFormat">24h</button>
+            <button id="moveClock">↔</button>
+
         </div>
+
+        <!-- repo link -->
+        <footer id="footer">
+            <p>-> Uku Siim Kurm</p>
+            <a href="https://github.com/ukusk/kodutoo-1" target="_blank">
+                GitHub repository
+            </a>
+        </footer>
+
     </div>
+
 </body>
+
 </html>

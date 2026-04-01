@@ -5,4 +5,6 @@ Funktsionaalsus: Tegu on ekraanikellaga, kus saab muuta taustavärvi, kella suur
 
 kuvatõmmis ekraanist -> https://drive.google.com/file/d/1wGgFg5VU3BR0-qlSEp_-VjP5R6FlwbOi/view?usp=sharing
 
+github pages link -> https://ukusk.github.io/kodutoo-1/clock.html 
+
 @taurikirsipuu
